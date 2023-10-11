@@ -78,7 +78,7 @@ class DatabaseQuery:
                 SELECT 
                 * 
                 FROM 
-                FNAME
+                FNAME 
                 WHERE SEX = ?
                 ORDER BY RANDOM() LIMIT ?;
                 """,
