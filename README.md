@@ -1,5 +1,5 @@
 
-![random_filipino_api](https://socialify.git.ci/neil-py/random_filipino_api/image?description=1&descriptionEditable=an%20open%20source%20api%20that%20provides%20random%20information&font=Jost&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Auto)
+![random_filipino_api](https://socialify.git.ci/neil-py/random_filipino_api/image?description=1&descriptionEditable=an%20open%20source%20api%20that%20provides%20random%20information&font=Jost&language=1&name=1&owner=1&pattern=Solid&theme=Auto)
 
 # random_filipino_api
 
