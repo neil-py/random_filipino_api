@@ -10,43 +10,71 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"> 💽 random_filipino_api</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-      </div>
-    </div>
-  </nav>
-
   <main>
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">random_filipino_api</h1>
+          <h1 class="">random_filipino_api</h1>
           <p class="lead text-muted"> an open source api that provides random information</p>
           <p>
-            <a href="#" class="btn btn-dark my-2">source code</a>
-            <a href="https://www.buymeacoffee.com/neilpatricv" class="btn btn-secondary my-2">buy me coffee</a>
+            <a href="https://github.com/neil-py/random_filipino_api" class="btn btn-dark my-2">source code</a>
           </p>
         </div>
       </div>
     </section>
+
     <div class="bg-light p-4">
 
+        <div class="bg-light p-4">
+          <div class="container">
+            <h2> 📖 About the API</h2>
+            <p class="lead text-muted">The random_filipino_api is an open-source API designed to provide developers with
+              a convenient way to generate random Filipino user information. It can be useful for testing, mock data
+              generation, and more.</p>
+              <p class="lead text-muted">The random_filipino_api was developed using a combination of technologies for both the backend and frontend:</p>
+              <ul>
+                <li><strong>Backend:</strong> SQLite, Python (Flask)</li>
+                <li><strong>Frontend:</strong> HTML, Bootstrap</li>
+              </ul>
+              <p class="text-muted">These technologies were used to create a robust and user-friendly API for generating random Filipino user data. If you have any questions or need further details about the implementation, feel free to reach out.</p>
+
+            
+          </div>
+        </div>
+        <hr class="container hr" />
+        <div class="bg-light p-4">
+          <div class="container">
+            <h2> 🧑‍💻 About the Developer</h2>
+            <p class="lead text-muted">Hi there! I'm Neil Patrick Villanueva, the developer behind the
+              random_filipino_api. I created this API as a fun project to generate random Filipino user information for
+              various use cases, including testing and data generation.</p>
+            <p class="text-muted">If you have any questions, suggestions, or feedback regarding the API, feel free to
+              reach out to me. You can connect with me on GitHub or support my work by buying me a coffee.</p>
+            <p>
+              <a href="https://github.com/neil-py" class="btn btn-dark my-2">GitHub</a>
+              <a href="https://www.buymeacoffee.com/neilpatricv" class="btn btn-secondary my-2">Buy Me Coffee</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
       <div class="container">
         <h2> 🔗Endpoints</h2>
+        <p class="text-muted">You can use the endpoints below to retrieve random information about Filipino users,
+          addresses, names, and phone numbers. Please review the details of each endpoint to understand how to use
+          the API effectively.</p>
         <hr class="hr" />
 
         <h2 class="">
-          🧑 Random User 
+          🧑 Random User
         </h2>
 
         <div class="inline">
-          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a href="/api/random-user">/api/random-user</a></small></h5>
+          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a
+                href="/api/random-user">/api/random-user</a></small></h5>
           <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
           <h5><strong>Description:</strong>
             <smalll class="text-body-secondary"> Returns random information about a Filipino user, including their name,
@@ -131,43 +159,44 @@
             </div>
           </div>
 
-      <div class="container">
-        <br>
-        <hr class="hr" />
-        <h2 class="">
-          🏠 Random Address
-        </h2>
-        <div class="inline">
-          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a href="/api/random-address">/api/random-address</a></small></h5>
-          <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
-          <h5><strong>Description:</strong>
-            <smalll class="text-body-secondary"> Returns a random address in the Philippines.</smalll>
-          </h5>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Parameters</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
-                </td>
-                <td> Number of addresses to retrieve. Default is 1.</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="container">
+            <br>
+            <hr class="hr" />
+            <h2 class="">
+              🏠 Random Address
+            </h2>
+            <div class="inline">
+              <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a
+                    href="/api/random-address">/api/random-address</a></small></h5>
+              <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
+              <h5><strong>Description:</strong>
+                <smalll class="text-body-secondary"> Returns a random address in the Philippines.</smalll>
+              </h5>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Parameters</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
+                    </td>
+                    <td> Number of addresses to retrieve. Default is 1.</td>
+                  </tr>
+                </tbody>
+              </table>
 
-        </div>
-        <div class="container mt-4">
-          <div class="card card bg-dark text-white">
-            <div class="card-header">
-              Sample JSON Response
             </div>
-            <div class="card-body" style="max-height: 300px; overflow: auto;">
-              <pre>
+            <div class="container mt-4">
+              <div class="card card bg-dark text-white">
+                <div class="card-header">
+                  Sample JSON Response
+                </div>
+                <div class="card-body" style="max-height: 300px; overflow: auto;">
+                  <pre>
                 <code class="card-body">
                   {
                     "result": [
@@ -180,53 +209,54 @@
                   }
                 </code>
               </pre>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-      <div class="container">
-        <br>
-        <hr class="hr" />
-        <h2 class="">
-          📛 Random Name
-        </h2>
-        <div class="inline">
-          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a href="/api/random-name">/api/random-name</a></small></h5>
-          <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
-          <h5><strong>Description:</strong>
-            <smalll class="card-body"> Returns random Filipino names.</smalll>
-          </h5>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Parameters</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
-                </td>
-                <td> Number of users to retrieve. Default is 1. Maximum limit: 30.</td>
-              </tr>
-              <tr>
-                <td>
-                  <h6>gender <small class="text-body-secondary">(string, optional)</small></h6>
-                </td>
-                <td> Filter users by gender. Accepted values are "male" or "female".</td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="container">
+              <br>
+              <hr class="hr" />
+              <h2 class="">
+                📛 Random Name
+              </h2>
+              <div class="inline">
+                <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a
+                      href="/api/random-name">/api/random-name</a></small></h5>
+                <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
+                <h5><strong>Description:</strong>
+                  <smalll class="card-body"> Returns random Filipino names.</smalll>
+                </h5>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Parameters</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
+                      </td>
+                      <td> Number of users to retrieve. Default is 1. Maximum limit: 30.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h6>gender <small class="text-body-secondary">(string, optional)</small></h6>
+                      </td>
+                      <td> Filter users by gender. Accepted values are "male" or "female".</td>
+                    </tr>
+                  </tbody>
+                </table>
 
-        </div>
-        <div class="container mt-4">
-          <div class="card card bg-dark text-white">
-            <div class="card-header">
-              Sample JSON Response
-            </div>
-            <div class="card-body" style="max-height: 300px; overflow: auto;">
-              <pre>
+              </div>
+              <div class="container mt-4">
+                <div class="card card bg-dark text-white">
+                  <div class="card-header">
+                    Sample JSON Response
+                  </div>
+                  <div class="card-body" style="max-height: 300px; overflow: auto;">
+                    <pre>
                 <code class="card-body">
                   {
                     "results": [
@@ -239,48 +269,49 @@
                   }
                 </code>
               </pre>
-            </div>
-          </div>
-        </div>
-        
-        
-      <div class="container">
-        <br>
-        <hr class="hr" />
-        <h2 class="">
-          ☎️ Random Phone
-        </h2>
-        <div class="inline">
-          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a href="/api/random-phone">/api/random-phone</a></small></h5>
-          <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
-          <h5><strong>Description:</strong>
-            <smalll class="text-body-secondary"> Returns a random Philippine phone number.</smalll>
-          </h5>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Parameters</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
-                </td>
-                <td> Number of users to retrieve. Default is 1. Maximum limit: 30.</td>
-              </tr>
-            </tbody>
-          </table>
+                  </div>
+                </div>
+              </div>
 
-        </div>
-        <div class="container mt-4">
-          <div class="card card bg-dark text-white">
-            <div class="card-header ">
-              Sample JSON Response
-            </div>
-            <div class="card-body" style="max-height: 300px; overflow: auto;">
-              <pre>
+
+              <div class="container">
+                <br>
+                <hr class="hr" />
+                <h2 class="">
+                  ☎️ Random Phone
+                </h2>
+                <div class="inline">
+                  <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a
+                        href="/api/random-phone">/api/random-phone</a></small></h5>
+                  <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
+                  <h5><strong>Description:</strong>
+                    <smalll class="text-body-secondary"> Returns a random Philippine phone number.</smalll>
+                  </h5>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Parameters</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
+                        </td>
+                        <td> Number of users to retrieve. Default is 1. Maximum limit: 30.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <div class="container mt-4">
+                  <div class="card card bg-dark text-white">
+                    <div class="card-header ">
+                      Sample JSON Response
+                    </div>
+                    <div class="card-body" style="max-height: 300px; overflow: auto;">
+                      <pre>
                 <code class="card-body">
                   {
                     "result": [
@@ -293,15 +324,22 @@
                   }
                 </code>
               </pre>
-            </div>
-          </div>
-        </div>
+                    </div>
+                  </div>
+                </div>
 
-    </div>
-
-
+              </div>
 
 
+
+              <div class="container mt-4">
+                <div class="alert alert-warning">
+                  <strong>Disclaimer:</strong> This API is provided for demonstration and educational purposes only. The
+                  data generated by this API is entirely fictional and should not be used for any real-world
+                  applications. The creator of this API is not responsible for any misuse of the data or any
+                  consequences resulting from its use.
+                </div>
+              </div>
 
   </main>
 
@@ -324,15 +362,7 @@
       </div>
 
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter"></use>
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram"></use>
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook"></use>
-            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://github.com/neil-py"> github </a></li>
       </ul>
     </footer>
   </div>
