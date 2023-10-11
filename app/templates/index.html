@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Filipino Api</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> 💽 random_filipino_api</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">random_filipino_api</h1>
+          <p class="lead text-muted"> an open source api that provides random information</p>
+          <p>
+            <a href="#" class="btn btn-dark my-2">source code</a>
+            <a href="https://www.buymeacoffee.com/neilpatricv" class="btn btn-secondary my-2">buy me coffee</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="bg-light p-4">
+
+      <div class="container">
+        <h2> 🔗Endpoints</h2>
+        <hr class="hr" />
+
+        <h2 class="">
+          🧑 Random User 
+        </h2>
+
+        <div class="inline">
+          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a href="/api/random-user">/api/random-user</a></small></h5>
+          <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
+          <h5><strong>Description:</strong>
+            <smalll class="text-body-secondary"> Returns random information about a Filipino user, including their name,
+              address, date of birth, email, phone number, identification, and bank details.</smalll>
+          </h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Parameters</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
+                </td>
+                <td> Number of users to retrieve. Default is 1. Maximum limit: 30.</td>
+              </tr>
+              <tr>
+                <td>
+                  <h6>gender <small class="text-body-secondary">(string, optional)</small></h6>
+                </td>
+                <td> Filter users by gender. Accepted values are "male" or "female".</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="container mt-4">
+            <div class="card card bg-dark text-white">
+              <div class="card-header ">
+                Sample JSON Response
+              </div>
+              <div class="card-body " style="max-height: 300px; overflow: auto;">
+                <pre>
+                  <code class="card-body ">
+          {
+            "results": [
+              {
+                "user_info": {
+                  "first_name": "Manuela",
+                  "last_name": "Pascual",
+                  "sex": "Female"
+                },
+                "date_of_birth": "1930-07-10",
+                "email_address": "manuela_pascual4087280@yandex.com",
+                "address": {
+                  "street": "14, Alloa",
+                  "city/suburb": "Quezon City",
+                  "postalcode": 1100
+                },
+                "phone_number": {
+                  "country_code": "+63",
+                  "phone_number": "09292487624",
+                  "network": "Smart"
+                },
+                "identification": {
+                  "social_security_number": "369-57-9243",
+                  "national_id": "PSN-7941-7941-7941",
+                  "license": {
+                    "type": "Professional",
+                    "license_number": "81184498844"
+                  }
+                },
+                "bank_details": {
+                  "bank_name": "UnionBank",
+                  "bank_account_number": "142543668016",
+                  "credit_card_info": {
+                    "card_type": "Mastercard",
+                    "card_number": "5415698549061951",
+                    "expiry_month": "02",
+                    "expiry_year": 2033,
+                    "security_number": "518"
+                  }
+                }
+              }
+            ]
+          }
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+
+      <div class="container">
+        <br>
+        <hr class="hr" />
+        <h2 class="">
+          🏠 Random Address
+        </h2>
+        <div class="inline">
+          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a href="/api/random-address">/api/random-address</a></small></h5>
+          <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
+          <h5><strong>Description:</strong>
+            <smalll class="text-body-secondary"> Returns a random address in the Philippines.</smalll>
+          </h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Parameters</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
+                </td>
+                <td> Number of addresses to retrieve. Default is 1.</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="container mt-4">
+          <div class="card card bg-dark text-white">
+            <div class="card-header">
+              Sample JSON Response
+            </div>
+            <div class="card-body" style="max-height: 300px; overflow: auto;">
+              <pre>
+                <code class="card-body">
+                  {
+                    "result": [
+                      {
+                        "street": "5903, Jacobo Street",
+                        "city/suburb": "Makati",
+                        "postalcode": 1210
+                      }
+                    ]
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+      <div class="container">
+        <br>
+        <hr class="hr" />
+        <h2 class="">
+          📛 Random Name
+        </h2>
+        <div class="inline">
+          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a href="/api/random-name">/api/random-name</a></small></h5>
+          <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
+          <h5><strong>Description:</strong>
+            <smalll class="card-body"> Returns random Filipino names.</smalll>
+          </h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Parameters</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
+                </td>
+                <td> Number of users to retrieve. Default is 1. Maximum limit: 30.</td>
+              </tr>
+              <tr>
+                <td>
+                  <h6>gender <small class="text-body-secondary">(string, optional)</small></h6>
+                </td>
+                <td> Filter users by gender. Accepted values are "male" or "female".</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="container mt-4">
+          <div class="card card bg-dark text-white">
+            <div class="card-header">
+              Sample JSON Response
+            </div>
+            <div class="card-body" style="max-height: 300px; overflow: auto;">
+              <pre>
+                <code class="card-body">
+                  {
+                    "results": [
+                      {
+                        "first_name": "Gonzalo Daniela",
+                        "last_name": "Saez",
+                        "sex": "Male"
+                      }
+                    ]
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        
+        
+      <div class="container">
+        <br>
+        <hr class="hr" />
+        <h2 class="">
+          ☎️ Random Phone
+        </h2>
+        <div class="inline">
+          <h5><strong>Endpoint:</strong> <small class="text-body-secondary"><a href="/api/random-phone">/api/random-phone</a></small></h5>
+          <h5><strong>HTTP Method: </strong> <small class="text-body-secondary">GET</small></h5>
+          <h5><strong>Description:</strong>
+            <smalll class="text-body-secondary"> Returns a random Philippine phone number.</smalll>
+          </h5>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Parameters</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h6>size <small class="text-body-secondary">(integer, optional)</small></h6>
+                </td>
+                <td> Number of users to retrieve. Default is 1. Maximum limit: 30.</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="container mt-4">
+          <div class="card card bg-dark text-white">
+            <div class="card-header ">
+              Sample JSON Response
+            </div>
+            <div class="card-body" style="max-height: 300px; overflow: auto;">
+              <pre>
+                <code class="card-body">
+                  {
+                    "result": [
+                      {
+                        "country_code": "+63",
+                        "phone_number": "09291618047",
+                        "network": "Smart"
+                      }
+                    ]
+                  }
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+
+
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+<footer>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© neil-py</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook"></use>
+            </svg></a></li>
+      </ul>
+    </footer>
+  </div>
+</footer>
+
+</html>
