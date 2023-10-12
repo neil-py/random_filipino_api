@@ -124,7 +124,7 @@ class RandomUserInfo:
         network, prefixes = random.choice(list(philippine_phone_networks.items())) # return random pairs for values
         random_prefix = random.choice(prefixes) # select random prefix from the prefixes array of a network
 
-        random_phone_number = f"{random_prefix}{"".join(random.choice(self._random_numbers) for i in range(11-len(random_prefix)))}"
+        random_phone_number = f"{random_prefix}{''.join(random.choice(self._random_numbers) for i in range(11-len(random_prefix)))}"
 
         return_result = {
                 'country_code': "+63",
