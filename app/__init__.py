@@ -7,7 +7,9 @@ from app.backend.api.index import index_bp
 def start_app():
     app = Flask(__name__)
     api = Api(app)
-
+    
+    app.json.sort_keys = False
+    app.json.ensure_ascii = False
     # index blueprint
     app.register_blueprint(index_bp)
 

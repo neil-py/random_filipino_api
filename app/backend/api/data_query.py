@@ -101,7 +101,7 @@ class DatabaseQuery:
         return_data = {
                     'first_name': first_name,
                     'last_name': last_name_result[0][0],
-                    'sex': first_name_result[0][1]
+                    'gender': first_name_result[0][1]
                 }
         return return_data
     
