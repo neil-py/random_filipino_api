@@ -25,6 +25,11 @@ Install project dependencies using pip:
    pip install -r requirements.txt
    ```
 
+Run the application:
+   ```bash
+   python main.py
+   ```
+
 ## Documentation
 
 For detailed information on how to use the API, please refer to the official API [Documentation](https://linktodocumentation). This documentation will guide you on how to make requests to the API endpoints and understand the data it provides.
